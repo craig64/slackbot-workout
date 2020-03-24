@@ -1,12 +1,12 @@
 {
-  "teamDomain": "yourDomainHere",
-  "channelName": "general",
-  "channelId": "channelIdHere",
+  "teamDomain": "intelligenceus.slack.com",
+  "channelName": "a-team",
+  "channelId": "GSE22KQN4",
 
   "officeHours": {
-    "on": false,
+    "on": true,
     "begin": 9,
-    "end": 17
+    "end": 16
    },
 
   "debug": false,
@@ -17,7 +17,7 @@
       "maxTime": 23,
       "units": "minutes"
     },
-    "numPeople": 3,
+    "numPeople": 2,
     "slidingWindowSize": 8,
     "groupCalloutChance": 0.05
   },
@@ -26,15 +26,15 @@
     {
       "id": 0,
       "name": "pushups",
-      "minReps": 15,
+      "minReps": 10,
       "maxReps": 20,
       "units": "rep"
     },
     {
       "id": 1,
       "name": "planks",
-      "minReps": 40,
-      "maxReps": 60,
+      "minReps": 20,
+      "maxReps": 40,
       "units": "second"
     },
     {
@@ -47,8 +47,8 @@
     {
       "id": 3,
       "name": "chair dips",
-      "minReps": 15,
-      "maxReps": 30,
+      "minReps": 10,
+      "maxReps": 20,
       "units": "rep"
     },
     {
