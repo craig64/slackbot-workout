@@ -1,12 +1,13 @@
 {
   "teamDomain": "intelligenceus.slack.com",
   "channelName": "a-team",
-  "channelId": "GSE22KQN4",
+  "channelId": "D5AC3KPJR",
+  "channelId2":"GSE22KQN4",
 
   "officeHours": {
     "on": true,
     "begin": 9,
-    "end": 16
+    "end": 18
    },
 
   "debug": false,
