@@ -1,5 +1,3 @@
 #!/bin/zsh
 
-export SLACK_URL_TOKEN_STRING=ewH3ujqPoUj2NRbp7Aon7LK7
-
 export SLACK_URL_TOKEN_STRING=<your token string>
