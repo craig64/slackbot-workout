@@ -122,8 +122,8 @@ Fetches a list of all active users in the channel
 def fetchActiveUsers(bot):
     # Check for new members
     params = {"token": USER_TOKEN_STRING, "channel": bot.channel_id}
-    response = requests.get("https://slack.com/api/channels.info", params=params)
-    user_ids = json.loads(response.text, encoding='utf-8')["channel"]["members"]
+    response = requests.get("https://slack.com/api/groups.info", params=params)
+    user_ids = json.loads(response.text, encoding='utf-8')["group"]["members"]
 
     active_users = []
 
@@ -149,7 +149,7 @@ period has past.
 '''
 def selectExerciseAndStartTime(bot):
     next_time_interval = selectNextTimeInterval(bot)
-    minute_interval = next_time_interval/60
+    minute_interval = int(next_time_interval/60)
     exercise = selectExercise(bot)
 
     # Announcement String of next lottery time
