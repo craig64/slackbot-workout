@@ -122,9 +122,8 @@ Fetches a list of all active users in the channel
 def fetchActiveUsers(bot):
     # Check for new members
     params = {"token": USER_TOKEN_STRING, "channel": bot.channel_id}
-    response = requests.get("https://slack.com/api/groups.info", params=params)
-    user_ids = json.loads(response.text, encoding='utf-8')["group"]["members"]
-
+    response = requests.get("https://slack.com/api/conversations.members", params=params)
+    user_ids = json.loads(response.text, encoding='utf-8')["members"]
     active_users = []
 
     for user_id in user_ids:
@@ -139,7 +138,7 @@ def fetchActiveUsers(bot):
             active_users.append(bot.user_cache[user_id])
 
     if bot.first_run:
-        bot.first_run = False
+        bot.first_run = True
 
     return active_users
 

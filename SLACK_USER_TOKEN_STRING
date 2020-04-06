@@ -1,3 +1,0 @@
-#!/bin/zsh
-
-export SLACK_USER_TOKEN_STRING=<your token>
